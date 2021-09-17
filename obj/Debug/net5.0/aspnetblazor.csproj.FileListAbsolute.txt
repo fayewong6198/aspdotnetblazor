@@ -626,7 +626,6 @@ C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\s
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\staticwebassets\aspnetblazor.StaticWebAssets.Manifest.cache
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\staticwebassets\aspnetblazor.StaticWebAssets.xml
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.RazorTargetAssemblyInfo.cache
-C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.csproj.CopyComplete
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.dll
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\ref\aspnetblazor.dll
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.pdb
