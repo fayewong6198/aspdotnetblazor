@@ -41,105 +41,6 @@
         }
       },
       {
-        "HashCode": -594739458,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -2010338182,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2046783638,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.FetchData",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -2032569490,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.FetchData",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 709223117,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Index",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -432381940,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Index",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1201439082,
         "Kind": "Components.Component",
         "Name": "aspnetblazor.Shared.SurveyPrompt",
@@ -318,6 +219,105 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "aspnetblazor.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -594739458,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Counter",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -2010338182,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Counter",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2046783638,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.FetchData",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -2032569490,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.FetchData",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 709223117,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Index",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -432381940,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Index",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
