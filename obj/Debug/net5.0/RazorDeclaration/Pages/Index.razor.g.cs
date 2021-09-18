@@ -126,10 +126,12 @@ using Microsoft.Extensions.Logging;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
+#line 28 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
        
-    private Feed feed = new();
+    private Feed feed = new Feed();
+    private List<FeedItem> feedItems = new List<FeedItem>();
 
+    private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
 
     protected override void OnInitialized()
@@ -139,6 +141,20 @@ using Microsoft.Extensions.Logging;
         TitleChoices.Add(new CustomLibrary.Inputs.Models.Choice("Title 3", "Title 3"));
 
     } 
+
+    private void AddItem() {
+        var newItem = new FeedItem();
+        newItem.Id = this.Id;
+        Console.WriteLine(this.Id);
+        this.Id = this.Id + 1;
+
+        this.feedItems.Add(newItem);
+    }
+
+    private void Delete(int id) {
+        var removeItem = this.feedItems.Single(item => item.Id == id);
+        this.feedItems.Remove(removeItem)  ;
+    }
 
     private void HandleValidSubmit()
     {

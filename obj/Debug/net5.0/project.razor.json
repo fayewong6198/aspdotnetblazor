@@ -8,167 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1778229144,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ZardDivContentEditable"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
-        }
-      },
-      {
-        "HashCode": -913457088,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 777349530,
         "Kind": "Components.Component",
         "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextInput",
@@ -326,6 +165,328 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextInput",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2131887109,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardTextEditor"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor"
+        }
+      },
+      {
+        "HashCode": 1098086475,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1778229144,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardDivContentEditable"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
+        }
+      },
+      {
+        "HashCode": -913457088,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -539,167 +700,6 @@
         }
       },
       {
-        "HashCode": -2131887109,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ZardTextEditor"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor"
-        }
-      },
-      {
-        "HashCode": 1098086475,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 348457994,
         "Kind": "Components.Component",
         "Name": "aspnetblazor.Shared.MainLayout",
@@ -882,35 +882,35 @@
         }
       },
       {
-        "HashCode": -594739458,
+        "HashCode": 401974273,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
+        "Name": "aspnetblazor.App",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter"
+          "Common.TypeName": "aspnetblazor.App"
         }
       },
       {
-        "HashCode": -2010338182,
+        "HashCode": -654418629,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
+        "Name": "aspnetblazor.App",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.Pages.Counter"
+            "TagName": "aspnetblazor.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter",
+          "Common.TypeName": "aspnetblazor.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -981,35 +981,35 @@
         }
       },
       {
-        "HashCode": 401974273,
+        "HashCode": -594739458,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.App",
+        "Name": "aspnetblazor.Pages.Counter",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.App"
+          "Common.TypeName": "aspnetblazor.Pages.Counter"
         }
       },
       {
-        "HashCode": -654418629,
+        "HashCode": -2010338182,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.App",
+        "Name": "aspnetblazor.Pages.Counter",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.App"
+            "TagName": "aspnetblazor.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.App",
+          "Common.TypeName": "aspnetblazor.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13248,89 +13248,6 @@
         }
       },
       {
-        "HashCode": 1637998255,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ZardDivContentEditable",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
-        }
-      },
-      {
-        "HashCode": -66473793,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1194831599,
         "Kind": "Components.Bind",
         "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextInput",
@@ -13414,89 +13331,6 @@
         }
       },
       {
-        "HashCode": -1644984149,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ZardSingleSelect",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
-        }
-      },
-      {
-        "HashCode": -1770957403,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -562856671,
         "Kind": "Components.Bind",
         "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
@@ -13576,6 +13410,172 @@
           "Components.Bind.ChangeAttribute": "ValueChanged",
           "Components.Bind.ExpressionAttribute": "ValueExpression",
           "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardTextEditor",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1637998255,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardDivContentEditable",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable"
+        }
+      },
+      {
+        "HashCode": -66473793,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1644984149,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardSingleSelect",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+        }
+      },
+      {
+        "HashCode": -1770957403,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

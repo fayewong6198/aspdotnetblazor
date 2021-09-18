@@ -4,10 +4,11 @@ namespace aspnetblazor.Models
 {
     public class FeedItem
     {
-        Feed Feed {get;set;}
-        int FeedId {get;set;}
-        string Data {get;set;}
-        string Url {get;set;}
+        public int Id {get;set;}
+        public Feed Feed {get;set;}
+        public int FeedId {get;set;}
+        public string Data {get;set;}
+        public string Url {get;set;}
 
     }
 }

@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-9AZ7YsJz\/p2gr4E0EQXdHBqwDxoXqtzxhqC6aRsa2K8=",
       "netstandard.dll": "sha256-yOOty6BTX3e57YAEHK5a4nku\/lj0vi7jg\/eQZAjbDQk=",
       "System.Private.CoreLib.dll": "sha256-rraBQp6NevIQiELPVfDFDl5pv9QVJqCiZhB5bkpiZ88=",
-      "aspnetblazor.dll": "sha256-Iks0MPs3SuGd5rh5NmrijJ\/gOyuHIWmzAwKZXxAiuQM="
+      "aspnetblazor.dll": "sha256-RQzA9idEqN9E4BBXghpjr57PEYKvZITE8mY2Dv0J6hY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "aspnetblazor.pdb": "sha256-nwJjuDuYILikOGYtiTUlSc4qQYv\/Q2vNJXNM6Vz4w3k="
+      "aspnetblazor.pdb": "sha256-0Y0sjd5kIEwMLoLzkE4\/sTXM5tS1HDKqS\/kgSxw1xwo="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-L2vkcKzmXJtf+J7db5TbDMBckrgqJ5qc0ZzVIdRlm0I=",

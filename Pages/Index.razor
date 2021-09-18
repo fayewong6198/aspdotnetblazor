@@ -5,25 +5,31 @@
 
 <div class="col-md-6">
 <EditForm Model="@feed" OnValidSubmit="@HandleValidSubmit">
-    <DataAnnotationsValidator />
-
-
     <ZardTextInput Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextInput>
-    
-    <ZardDivContentEditable Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardDivContentEditable>
-
-    <ZardSingleSelect Choices="@TitleChoices" Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardSingleSelect>
-
-    <ZardTextEditor Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextEditor>
-
-    <button class="btn btn-primary" type="submit">Submit</button>
 </EditForm>
+
+
+    @foreach (var item in feedItems)
+    {   
+        <div style="display: flex; justify-content: space-between">
+            <EditForm Model="@item" OnValidSubmit="@HandleValidSubmit">
+                @item.Id
+                <ZardTextInput @bind-Value="item.Data" ValidationFor="@(() => item.Data)"></ZardTextInput>
+            </EditForm>
+            <button class="btn btn-danger" @onclick="e => Delete(item.Id)">Delete</button>
+        </div>
+
+    }
+
+    <button class="btn btn-primary" @onclick="e => AddItem()">Add Item</button>
 </div>
 
 
 @code {
-    private Feed feed = new();
+    private Feed feed = new Feed();
+    private List<FeedItem> feedItems = new List<FeedItem>();
 
+    private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
 
     protected override void OnInitialized()
@@ -33,6 +39,20 @@
         TitleChoices.Add(new CustomLibrary.Inputs.Models.Choice("Title 3", "Title 3"));
 
     } 
+
+    private void AddItem() {
+        var newItem = new FeedItem();
+        newItem.Id = this.Id;
+        Console.WriteLine(this.Id);
+        this.Id = this.Id + 1;
+
+        this.feedItems.Add(newItem);
+    }
+
+    private void Delete(int id) {
+        var removeItem = this.feedItems.Single(item => item.Id == id);
+        this.feedItems.Remove(removeItem)  ;
+    }
 
     private void HandleValidSubmit()
     {
