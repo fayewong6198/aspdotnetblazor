@@ -1,0 +1,67 @@
+@inherits InputBase<string>
+@using System.Linq.Expressions
+@using System
+@inject IJSRuntime JS
+
+<div class="form-group">
+    @if (!string.IsNullOrWhiteSpace(Label))
+    {
+        <label for="@Id">@Label</label>
+    }
+
+    <div @ref="editorElement" id="@Id" style="min-height: 50px" ></div>
+    <div class="form-control-validation">
+        <ValidationMessage For="@ValidationFor" />
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter] public string Label { get; set; }
+    [Parameter] public Expression<Func<string>> ValidationFor { get; set; }
+
+    public string InitValue {get;set;}
+    public string Id = Guid.NewGuid().ToString();
+
+    private ElementReference editorElement;
+    private DotNetObjectReference<ZardTextEditor> objRef;
+
+     protected override void OnInitialized()
+    {
+        objRef = DotNetObjectReference.Create(this);
+
+        InitValue = this.CurrentValue;
+    }
+
+    [JSInvokable]
+    public void OnBlur(string text) {
+        @* string text = new(await JS.InvokeAsync<string>("getQuillInnerHtml", this.Id)); *@
+
+        this.CurrentValue = text;
+
+        Console.WriteLine("cccccc");
+    }
+    protected override bool TryParseValueFromString(string value, out string result, out string validationErrorMessage)
+    {
+        result = value;
+        validationErrorMessage = null;
+        return true;
+    }
+
+    
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync(
+                "createQuillEditor",this.CurrentValue,  this.editorElement, this.objRef);
+        }
+    }
+
+     public void Dispose()
+    {
+        objRef?.Dispose();
+    }
+}

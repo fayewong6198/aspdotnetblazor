@@ -79,6 +79,34 @@ using aspnetblazor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.CustomLibrary.Inputs;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.CustomLibrary;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Blazored.TextEditor;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

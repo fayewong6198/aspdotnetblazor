@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fEIGzWavBiaObSYQ3osxr0niFU/zqy5aS1hhVqNeG4QK2uHlqs3W9DgAPE73xfhNNyhC+Nnz913j8lutpHKCaQ==",
+  "dgSpecHash": "NAzaYogTTH/5XG/Watc69h7iP+YJvnxkhAi64jHt7doOWmh8YIWIMmD1g+a7xvhLo3XbWoJVYYIGylCTdyq4XA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\aspnetblazor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Faye Wong\\.nuget\\packages\\blazored.texteditor\\1.0.3\\blazored.texteditor.1.0.3.nupkg.sha512",
     "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.4\\microsoft.aspnetcore.authorization.5.0.4.nupkg.sha512",
     "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.4\\microsoft.aspnetcore.components.5.0.4.nupkg.sha512",
     "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.4\\microsoft.aspnetcore.components.analyzers.5.0.4.nupkg.sha512",

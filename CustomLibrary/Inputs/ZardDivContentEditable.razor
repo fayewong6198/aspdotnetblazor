@@ -1,0 +1,41 @@
+@inherits InputBase<string>
+@using System.Linq.Expressions
+@using System
+@inject IJSRuntime JS
+
+<div class="form-group">
+    @if (!string.IsNullOrWhiteSpace(Label))
+    {
+        <label for="@Id">@Label</label>
+    }
+    @* <input class="form-control @CssClass" id="@Id" @bind="@CurrentValue" /> *@
+    <div class="div-content-editable @CssClass"  id="@Id" contenteditable="true" @onblur="e => OnBlur()"> @((MarkupString)InitValue)  </div>
+    <div class="form-control-validation">
+        <ValidationMessage For="@ValidationFor" />
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Label { get; set; }
+    [Parameter] public Expression<Func<string>> ValidationFor { get; set; }
+
+    public string InitValue {get;set;}
+    public string Id =  Guid.NewGuid().ToString();
+
+     protected override void OnInitialized()
+    {
+        InitValue = this.CurrentValue;
+    }
+
+    public async void OnBlur() {
+        string text = new(await JS.InvokeAsync<string>("getInnerHtml", this.Id));
+
+        this.CurrentValue = text;
+    }
+    protected override bool TryParseValueFromString(string value, out string result, out string validationErrorMessage)
+    {
+        result = value;
+        validationErrorMessage = null;
+        return true;
+    }
+}

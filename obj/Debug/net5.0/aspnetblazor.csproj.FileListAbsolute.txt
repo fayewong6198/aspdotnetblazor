@@ -629,3 +629,14 @@ C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\a
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.dll
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\ref\aspnetblazor.dll
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\aspnetblazor.pdb
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\RazorDeclaration\CustomLibrary\Inputs\ZardTextInput.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\Razor\CustomLibrary\Inputs\ZardTextInput.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\RazorDeclaration\CustomLibrary\Inputs\ZardDivContentEditable.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\Razor\CustomLibrary\Inputs\ZardDivContentEditable.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\RazorDeclaration\CustomLibrary\Inputs\ZardSingleSelect.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\Razor\CustomLibrary\Inputs\ZardSingleSelect.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\bin\Debug\net5.0\wwwroot\_framework\Blazored.TextEditor.dll.gz
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\bin\Debug\net5.0\wwwroot\_framework\Blazored.TextEditor.dll
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\RazorDeclaration\CustomLibrary\Inputs\ZardTextEditor.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\Razor\CustomLibrary\Inputs\ZardTextEditor.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\build-gz\j7A0dfcg.gz
