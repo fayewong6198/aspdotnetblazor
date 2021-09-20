@@ -1,0 +1,92 @@
+@page "/book/update"
+
+@using Microsoft.Extensions.Logging
+@using aspnetblazor.Pages.Books.Update.Components
+@inject ILogger<Index> Logger
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+<div class="col-md-6">
+<EditForm Model="@feed" OnValidSubmit="@HandleValidSubmit">
+    <ZardTextInput Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextInput>
+</EditForm>
+
+
+    @foreach (var item in feedItems)
+    {   
+        <div style="display: flex; justify-content: space-between">
+            @if (item.Type.Equals("header")) {
+                <Header feedItem="@item"></Header>
+            }
+            @if (item.Type.Equals("text")) {
+                <TextField feedItem="@item"></TextField>
+
+            }
+            <button class="btn btn-danger" @onclick="e => DeleteItem(item.Id)">Delete</button>
+        </div>
+
+    }
+
+    <div style="display: flex">
+        <button class="btn btn-primary mr-2" @onclick=@(e => AddItem("header"))> Add Header</button>
+        <button class="btn btn-primary"  @onclick=@(e => AddItem("text"))>Add Text</button>
+    </div>
+  
+
+</div>
+
+
+@code {
+    private Feed feed = new Feed();
+    private List<FeedItem> feedItems = new List<FeedItem>();
+
+    private int Id = 0;
+    private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
+
+    protected override async Task OnInitializedAsync()
+    {
+       await GetTodoItems();
+
+    } 
+    private async Task GetTodoItems() {
+        feedItems = await Http.GetFromJsonAsync<List<FeedItem>>("https://localhost:5001/api/feeditems");
+        StateHasChanged();
+
+    }
+
+    private async void AddItem(string type) {
+        var newItem = new FeedItem();
+        newItem.FeedId = 1;
+        newItem.Type = type;
+
+        await Http.PostAsJsonAsync("https://localhost:5001/api/feeditems", newItem);
+
+        await GetTodoItems();
+
+    }
+
+
+    private void Delete(int id) {
+        var removeItem = this.feedItems.Single(item => item.Id == id);
+        this.feedItems.Remove(removeItem)  ;
+    }
+
+
+    private async Task DeleteItem(long id)
+    {
+        await Http.DeleteAsync($"https://localhost:5001/api/feeditems/{id}");
+        await GetTodoItems();
+    
+    }
+
+    private void HandleValidSubmit()
+    {
+        Logger.LogInformation("HandleValidSubmit called");
+
+        // Process the valid form
+    }
+}
+
+<SurveyPrompt Title="How is Blazor working for you?" />

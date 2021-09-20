@@ -1,0 +1,35 @@
+
+@using System.Linq.Expressions
+@using System
+@inject IJSRuntime JS
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+<div class="div-content-editable" style="width: 100%"  id="@Id" contenteditable="true" @onblur="e => UpdateFeed()"> @((MarkupString)InitValue)  </div>
+
+
+@code {
+    private string CurrentValue = "";
+    public string InitValue {get;set;}
+
+    [Parameter]
+    public FeedItem feedItem {get;set;}
+    public string Id =  Guid.NewGuid().ToString();
+
+     protected override void OnInitialized()
+    {
+        InitValue = feedItem.Data;
+    }
+
+    private async void UpdateFeed() {
+        string text = new(await JS.InvokeAsync<string>("getInnerHtml", this.Id));
+
+        feedItem.Data = text;
+
+        await Http.PutAsJsonAsync($"https://localhost:5001/api/feeditems/{feedItem.Id}", feedItem);
+
+    }
+ 
+}

@@ -1,0 +1,16 @@
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+<input type="text" @bind="feedItem.Data" class="form-control" @onblur="e => UpdateFeed()">
+
+@code {
+
+    [Parameter]
+    public FeedItem feedItem {get;set;}
+    private async void UpdateFeed() {
+        await Http.PutAsJsonAsync($"https://localhost:5001/api/feeditems/{feedItem.Id}", feedItem);
+
+    }
+}

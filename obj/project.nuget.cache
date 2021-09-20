@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NAzaYogTTH/5XG/Watc69h7iP+YJvnxkhAi64jHt7doOWmh8YIWIMmD1g+a7xvhLo3XbWoJVYYIGylCTdyq4XA==",
+  "dgSpecHash": "bscm+PGRe5YZqdGiJ0z4ZGN2qirIsvSJZFA1OpmBFv0unw/LQFafcJ2wIng036n5L0jqRl5eiGQ6NQlo4LS0lw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\aspnetblazor.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.4\\microsoft.jsinterop.webassembly.5.0.4.nupkg.sha512",
     "C:\\Users\\Faye Wong\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Faye Wong\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.9\\microsoft.netcore.app.runtime.browser-wasm.5.0.9.nupkg.sha512"
+    "C:\\Users\\Faye Wong\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.10\\microsoft.netcore.app.runtime.browser-wasm.5.0.10.nupkg.sha512"
   ],
   "logs": []
 }

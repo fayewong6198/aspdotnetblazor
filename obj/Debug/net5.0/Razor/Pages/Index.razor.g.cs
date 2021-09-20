@@ -123,7 +123,7 @@ using Microsoft.Extensions.Logging;
             __builder.OpenElement(0, "div");
             __builder.AddAttribute(1, "class", "col-md-6");
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(2);
-            __builder.AddAttribute(3, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(3, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 7 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                   feed
@@ -132,7 +132,7 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(4, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(4, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 7 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                         HandleValidSubmit
@@ -144,7 +144,7 @@ using Microsoft.Extensions.Logging;
             __builder.AddAttribute(5, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Forms.EditContext>)((context) => (__builder2) => {
                 __builder2.OpenComponent<aspnetblazor.CustomLibrary.Inputs.ZardTextInput>(6);
                 __builder2.AddAttribute(7, "Label", "Title");
-                __builder2.AddAttribute(8, "ValidationFor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(
+                __builder2.AddAttribute(8, "ValidationFor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(
 #nullable restore
 #line 8 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                                                            () => feed.Title
@@ -153,7 +153,7 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(9, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(9, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 8 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                               feed.Title
@@ -162,8 +162,8 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(10, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => feed.Title = __value, feed.Title))));
-                __builder2.AddAttribute(11, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => feed.Title));
+                __builder2.AddAttribute(10, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => feed.Title = __value, feed.Title))));
+                __builder2.AddAttribute(11, "ValueExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => feed.Title));
                 __builder2.CloseComponent();
             }
             ));
@@ -179,7 +179,7 @@ using Microsoft.Extensions.Logging;
             __builder.OpenElement(12, "div");
             __builder.AddAttribute(13, "style", "display: flex; justify-content: space-between");
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(14);
-            __builder.AddAttribute(15, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
+            __builder.AddAttribute(15, "Model", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Object>(
 #nullable restore
 #line 15 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                               item
@@ -188,7 +188,7 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(16, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            __builder.AddAttribute(16, "OnValidSubmit", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Forms.EditContext>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 15 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                                     HandleValidSubmit
@@ -198,16 +198,18 @@ using Microsoft.Extensions.Logging;
 #nullable disable
             )));
             __builder.AddAttribute(17, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Forms.EditContext>)((context) => (__builder2) => {
+                __builder2.AddContent(18, 
 #nullable restore
 #line 16 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
-__builder2.AddContent(18, item.Id);
+                 item.Id
 
 #line default
 #line hidden
 #nullable disable
+                );
                 __builder2.AddMarkupContent(19, "\r\n                ");
                 __builder2.OpenComponent<aspnetblazor.CustomLibrary.Inputs.ZardTextInput>(20);
-                __builder2.AddAttribute(21, "ValidationFor", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(
+                __builder2.AddAttribute(21, "ValidationFor", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(
 #nullable restore
 #line 17 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                                                         () => item.Data
@@ -216,7 +218,7 @@ __builder2.AddContent(18, item.Id);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(22, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
+                __builder2.AddAttribute(22, "Value", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.String>(
 #nullable restore
 #line 17 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
                                             item.Data
@@ -225,8 +227,8 @@ __builder2.AddContent(18, item.Id);
 #line hidden
 #nullable disable
                 ));
-                __builder2.AddAttribute(23, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => item.Data = __value, item.Data))));
-                __builder2.AddAttribute(24, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => item.Data));
+                __builder2.AddAttribute(23, "ValueChanged", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.EventCallback<System.String>>(Microsoft.AspNetCore.Components.EventCallback.Factory.Create<System.String>(this, Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => item.Data = __value, item.Data))));
+                __builder2.AddAttribute(24, "ValueExpression", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Linq.Expressions.Expression<System.Func<System.String>>>(() => item.Data));
                 __builder2.CloseComponent();
             }
             ));

@@ -8,6 +8,215 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 1677487471,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardSingleSelect"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Choices",
+            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
+            "Metadata": {
+              "Common.PropertyName": "Choices"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "FilteredChoices",
+            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
+            "Metadata": {
+              "Common.PropertyName": "FilteredChoices"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+        }
+      },
+      {
+        "HashCode": 1812511028,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValidationFor",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Metadata": {
+              "Common.PropertyName": "ValidationFor"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Choices",
+            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
+            "Metadata": {
+              "Common.PropertyName": "Choices"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "FilteredChoices",
+            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
+            "Metadata": {
+              "Common.PropertyName": "FilteredChoices"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 777349530,
         "Kind": "Components.Component",
         "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextInput",
@@ -491,211 +700,306 @@
         }
       },
       {
-        "HashCode": 1677487471,
+        "HashCode": 709223117,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "Name": "aspnetblazor.Pages.Index",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ZardSingleSelect"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Id"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Choices",
-            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
-            "Metadata": {
-              "Common.PropertyName": "Choices"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "FilteredChoices",
-            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
-            "Metadata": {
-              "Common.PropertyName": "FilteredChoices"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+          "Common.TypeName": "aspnetblazor.Pages.Index"
         }
       },
       {
-        "HashCode": 1812511028,
+        "HashCode": -432381940,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "Name": "aspnetblazor.Pages.Index",
         "AssemblyName": "aspnetblazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+            "TagName": "aspnetblazor.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2046783638,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.FetchData",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -2032569490,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.FetchData",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -594739458,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Counter",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -2010338182,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Counter",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1404542212,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.Page",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Page"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.Page"
+        }
+      },
+      {
+        "HashCode": -1577371455,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.Page",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Books.Update.Components.Page"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.Page",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 923336477,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TextField"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.String",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
             "Metadata": {
-              "Common.PropertyName": "Id"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValidationFor",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Metadata": {
-              "Common.PropertyName": "ValidationFor"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Choices",
-            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
-            "Metadata": {
-              "Common.PropertyName": "Choices"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "FilteredChoices",
-            "TypeName": "System.Collections.Generic.List<aspnetblazor.CustomLibrary.Inputs.Models.Choice>",
-            "Metadata": {
-              "Common.PropertyName": "FilteredChoices"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
+              "Common.PropertyName": "feedItem"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField"
+        }
+      },
+      {
+        "HashCode": 274722759,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Books.Update.Components.TextField"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
+            "Metadata": {
+              "Common.PropertyName": "feedItem"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 517226134,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.Header",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Header"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
+            "Metadata": {
+              "Common.PropertyName": "feedItem"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.Header"
+        }
+      },
+      {
+        "HashCode": -1305310847,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.Header",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Books.Update.Components.Header"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
+            "Metadata": {
+              "Common.PropertyName": "feedItem"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.Header",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1182047411,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Container",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Container"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Container"
+        }
+      },
+      {
+        "HashCode": 1122708143,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Container",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Books.Update.Container"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Container",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 401974273,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.App",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.App"
+        }
+      },
+      {
+        "HashCode": -654418629,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.App",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -882,134 +1186,213 @@
         }
       },
       {
-        "HashCode": 401974273,
+        "HashCode": 366037409,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.App",
-        "AssemblyName": "aspnetblazor",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "BlazoredTextEditor"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EditorContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "EditorContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ToolbarContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ToolbarContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ReadOnly",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ReadOnly"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Placeholder",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Placeholder"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Theme",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Theme"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DebugLevel",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "DebugLevel"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.App"
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor"
         }
       },
       {
-        "HashCode": -654418629,
+        "HashCode": 1165996508,
         "Kind": "Components.Component",
-        "Name": "aspnetblazor.App",
-        "AssemblyName": "aspnetblazor",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.App"
+            "TagName": "Blazored.TextEditor.BlazoredTextEditor"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EditorContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "EditorContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ToolbarContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ToolbarContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ReadOnly",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ReadOnly"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Placeholder",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Placeholder"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Theme",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Theme"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DebugLevel",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "DebugLevel"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.App",
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -2046783638,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.FetchData",
-        "AssemblyName": "aspnetblazor",
+        "HashCode": 34991892,
+        "Kind": "Components.ChildContent",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
+            "TagName": "EditorContent",
+            "ParentTag": "BlazoredTextEditor"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.FetchData"
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -2032569490,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.FetchData",
-        "AssemblyName": "aspnetblazor",
+        "HashCode": -930919898,
+        "Kind": "Components.ChildContent",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.Pages.FetchData"
+            "TagName": "EditorContent",
+            "ParentTag": "Blazored.TextEditor.BlazoredTextEditor"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.FetchData",
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 709223117,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Index",
-        "AssemblyName": "aspnetblazor",
+        "HashCode": 696136217,
+        "Kind": "Components.ChildContent",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "ToolbarContent",
+            "ParentTag": "BlazoredTextEditor"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Index"
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -432381940,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Index",
-        "AssemblyName": "aspnetblazor",
+        "HashCode": -236539246,
+        "Kind": "Components.ChildContent",
+        "Name": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
+        "AssemblyName": "Blazored.TextEditor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "aspnetblazor.Pages.Index"
+            "TagName": "ToolbarContent",
+            "ParentTag": "Blazored.TextEditor.BlazoredTextEditor"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -594739458,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -2010338182,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Counter",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Counter",
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4152,217 +4535,6 @@
         "Metadata": {
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 366037409,
-        "Kind": "Components.Component",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazoredTextEditor"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EditorContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "EditorContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ToolbarContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ToolbarContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ReadOnly",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ReadOnly"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Placeholder",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Placeholder"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Theme",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Theme"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DebugLevel",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "DebugLevel"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor"
-        }
-      },
-      {
-        "HashCode": 1165996508,
-        "Kind": "Components.Component",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Blazored.TextEditor.BlazoredTextEditor"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "EditorContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "EditorContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ToolbarContent",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "ToolbarContent",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ReadOnly",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ReadOnly"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Placeholder",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Placeholder"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Theme",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Theme"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DebugLevel",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "DebugLevel"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 34991892,
-        "Kind": "Components.ChildContent",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditorContent",
-            "ParentTag": "BlazoredTextEditor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -930919898,
-        "Kind": "Components.ChildContent",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditorContent",
-            "ParentTag": "Blazored.TextEditor.BlazoredTextEditor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.EditorContent",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 696136217,
-        "Kind": "Components.ChildContent",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ToolbarContent",
-            "ParentTag": "BlazoredTextEditor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -236539246,
-        "Kind": "Components.ChildContent",
-        "Name": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
-        "AssemblyName": "Blazored.TextEditor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ToolbarContent",
-            "ParentTag": "Blazored.TextEditor.BlazoredTextEditor"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Blazored.TextEditor.BlazoredTextEditor.ToolbarContent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
@@ -13248,6 +13420,89 @@
         }
       },
       {
+        "HashCode": -1644984149,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ZardSingleSelect",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
+        }
+      },
+      {
+        "HashCode": -1770957403,
+        "Kind": "Components.Bind",
+        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+        "AssemblyName": "aspnetblazor",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1194831599,
         "Kind": "Components.Bind",
         "Name": "aspnetblazor.CustomLibrary.Inputs.ZardTextInput",
@@ -13493,89 +13748,6 @@
           "Components.Bind.ChangeAttribute": "ValueChanged",
           "Components.Bind.ExpressionAttribute": "ValueExpression",
           "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardDivContentEditable",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1644984149,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ZardSingleSelect",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect"
-        }
-      },
-      {
-        "HashCode": -1770957403,
-        "Kind": "Components.Bind",
-        "Name": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-        "AssemblyName": "aspnetblazor",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "aspnetblazor.CustomLibrary.Inputs.ZardSingleSelect",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14274,13 +14446,28 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\Pages\\Books\\Update\\Components\\TextField.razor",
+      "TargetPath": "Pages\\Books\\Update\\Components\\TextField.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\Pages\\Books\\Update\\Components\\Page.razor",
+      "TargetPath": "Pages\\Books\\Update\\Components\\Page.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\Pages\\Books\\Update\\Components\\Header.razor",
+      "TargetPath": "Pages\\Books\\Update\\Components\\Header.razor",
       "FileKind": "component"
     },
     {
@@ -14301,6 +14488,11 @@
     {
       "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\CustomLibrary\\Inputs\\ZardDivContentEditable.razor",
       "TargetPath": "CustomLibrary\\Inputs\\ZardDivContentEditable.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Faye Wong\\Documents\\Side project\\Github\\aspnetblazor\\Pages\\Books\\Update\\Container.razor",
+      "TargetPath": "Pages\\Books\\Update\\Container.razor",
       "FileKind": "component"
     }
   ],
