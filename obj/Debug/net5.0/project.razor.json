@@ -832,59 +832,6 @@
         }
       },
       {
-        "HashCode": 923336477,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TextField"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "feedItem",
-            "TypeName": "aspnetblazor.Models.FeedItem",
-            "Metadata": {
-              "Common.PropertyName": "feedItem"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField"
-        }
-      },
-      {
-        "HashCode": 274722759,
-        "Kind": "Components.Component",
-        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
-        "AssemblyName": "aspnetblazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "aspnetblazor.Pages.Books.Update.Components.TextField"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "feedItem",
-            "TypeName": "aspnetblazor.Models.FeedItem",
-            "Metadata": {
-              "Common.PropertyName": "feedItem"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 517226134,
         "Kind": "Components.Component",
         "Name": "aspnetblazor.Pages.Books.Update.Components.Header",
@@ -934,6 +881,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.Header",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 923336477,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TextField"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
+            "Metadata": {
+              "Common.PropertyName": "feedItem"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField"
+        }
+      },
+      {
+        "HashCode": 274722759,
+        "Kind": "Components.Component",
+        "Name": "aspnetblazor.Pages.Books.Update.Components.TextField",
+        "AssemblyName": "aspnetblazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "aspnetblazor.Pages.Books.Update.Components.TextField"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "feedItem",
+            "TypeName": "aspnetblazor.Models.FeedItem",
+            "Metadata": {
+              "Common.PropertyName": "feedItem"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "aspnetblazor.Pages.Books.Update.Components.TextField",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

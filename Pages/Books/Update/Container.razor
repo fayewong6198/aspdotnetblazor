@@ -51,7 +51,7 @@
 
     } 
     private async Task GetTodoItems() {
-        feedItems = await Http.GetFromJsonAsync<List<FeedItem>>("https://localhost:5001/api/feeditems");
+        feedItems = await Http.GetFromJsonAsync<List<FeedItem>>("https://zard-w4tf2.ondigitalocean.app/api/feeditems");
         StateHasChanged();
 
     }
@@ -61,7 +61,7 @@
         newItem.FeedId = 1;
         newItem.Type = type;
 
-        await Http.PostAsJsonAsync("https://localhost:5001/api/feeditems", newItem);
+        await Http.PostAsJsonAsync("https://zard-w4tf2.ondigitalocean.app/api/feeditems", newItem);
 
         await GetTodoItems();
 
@@ -76,7 +76,7 @@
 
     private async Task DeleteItem(long id)
     {
-        await Http.DeleteAsync($"https://localhost:5001/api/feeditems/{id}");
+        await Http.DeleteAsync($"https://zard-w4tf2.ondigitalocean.app/api/feeditems/{id}");
         await GetTodoItems();
     
     }
