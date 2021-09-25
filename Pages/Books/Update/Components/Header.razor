@@ -2,6 +2,7 @@
 @using System.Net.Http
 @inject HttpClient Http
 @using System.Net.Http.Json
+@inject IConfiguration Configuration
 
 <input type="text" @bind="feedItem.Data" class="form-control" @onblur="e => UpdateFeed()">
 
@@ -9,8 +10,22 @@
 
     [Parameter]
     public FeedItem feedItem {get;set;}
-    private async void UpdateFeed() {
-        await Http.PutAsJsonAsync($"https://zard-w4tf2.ondigitalocean.app/api/feeditems/{feedItem.Id}", feedItem);
 
+    private async Task UpdateFeed()
+    {
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("PUT"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/feeditems/{feedItem.Id}"),
+            Content =
+                JsonContent.Create(feedItem)
+        };
+
+        var token = "";
+
+        requestMessage.Content.Headers.TryAddWithoutValidation(
+            "token", token);
+
+        var res = await Http.SendAsync(requestMessage);
     }
 }

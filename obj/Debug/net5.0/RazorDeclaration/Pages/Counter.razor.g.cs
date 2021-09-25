@@ -110,6 +110,34 @@ using Blazored.TextEditor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.Extensions.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.AuthProviders;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.States;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -131,6 +159,7 @@ using Blazored.TextEditor;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IConfiguration Configuration { get; set; }
     }
 }
 #pragma warning restore 1591

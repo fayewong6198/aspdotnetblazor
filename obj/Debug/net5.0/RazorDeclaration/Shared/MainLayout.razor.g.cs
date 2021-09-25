@@ -110,6 +110,48 @@ using Blazored.TextEditor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.Extensions.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.AuthProviders;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.States;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Shared\MainLayout.razor"
+using System.Security.Claims;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Shared\MainLayout.razor"
+           [Authorize]
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -117,6 +159,21 @@ using Blazored.TextEditor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 24 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Shared\MainLayout.razor"
+       
+    protected override async Task OnInitializedAsync()
+    {
+        
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ApplicationUser ApplicationUser { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IConfiguration Configuration { get; set; }
     }
 }
 #pragma warning restore 1591

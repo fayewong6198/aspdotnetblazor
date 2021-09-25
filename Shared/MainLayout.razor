@@ -1,5 +1,9 @@
 ﻿@inherits LayoutComponentBase
-
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager NavManager
+@using System.Security.Claims
+@inject ApplicationUser ApplicationUser
+@attribute [Authorize]
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -11,7 +15,15 @@
         </div>
 
         <div class="content px-4">
+
             @Body
         </div>
     </div>
 </div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        
+    }
+}

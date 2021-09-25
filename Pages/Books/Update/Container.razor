@@ -1,12 +1,15 @@
 @page "/book/update"
 
 @using Microsoft.Extensions.Logging
+@using System.Net.Http.Headers
 @using aspnetblazor.Pages.Books.Update.Components
 @inject ILogger<Index> Logger
 
 @using System.Net.Http
 @inject HttpClient Http
 @using System.Net.Http.Json
+
+@inject IConfiguration Configuration
 
 <div class="col-md-6">
 <EditForm Model="@feed" OnValidSubmit="@HandleValidSubmit">
@@ -16,16 +19,19 @@
 
     @foreach (var item in feedItems)
     {   
-        <div style="display: flex; justify-content: space-between">
-            @if (item.Type.Equals("header")) {
-                <Header feedItem="@item"></Header>
+            <div style="display: flex; justify-content: space-between">
+                <div> @item.Id </div>
+            @if (item.Type.Equals("header"))
+            {
+                        <Header feedItem="@item"></Header>
             }
-            @if (item.Type.Equals("text")) {
-                <TextField feedItem="@item"></TextField>
+            @if (item.Type.Equals("text"))
+            {
+                        <TextField feedItem="@item"></TextField>
 
             }
-            <button class="btn btn-danger" @onclick="e => DeleteItem(item.Id)">Delete</button>
-        </div>
+                <button class="btn btn-danger" @onclick="e => DeleteItem(item.Id)">Delete</button>
+            </div>
 
     }
 
@@ -33,7 +39,7 @@
         <button class="btn btn-primary mr-2" @onclick=@(e => AddItem("header"))> Add Header</button>
         <button class="btn btn-primary"  @onclick=@(e => AddItem("text"))>Add Text</button>
     </div>
-  
+
 
 </div>
 
@@ -47,38 +53,59 @@
 
     protected override async Task OnInitializedAsync()
     {
-       await GetTodoItems();
+        await GetTodoItems();
 
-    } 
-    private async Task GetTodoItems() {
-        feedItems = await Http.GetFromJsonAsync<List<FeedItem>>("https://zard-w4tf2.ondigitalocean.app/api/feeditems");
+    }
+    private async Task GetTodoItems()
+    {
+        feedItems = await Http.GetFromJsonAsync<List<FeedItem>>($"{Configuration["API"]}/api/feeditems");
         StateHasChanged();
 
     }
 
-    private async void AddItem(string type) {
-        var newItem = new FeedItem();
-        newItem.FeedId = 1;
-        newItem.Type = type;
+    private async Task AddItem(string type)
+    {
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("POST"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/feeditems"),
+            Content =
+                JsonContent.Create(new FeedItem
+                {
+                    FeedId = 1,
+                    Type = type
+                })
+        };
 
-        await Http.PostAsJsonAsync("https://zard-w4tf2.ondigitalocean.app/api/feeditems", newItem);
+        var token = "";
 
-        await GetTodoItems();
+        requestMessage.Content.Headers.TryAddWithoutValidation(
+            "token", token);
 
-    }
+        var res = await Http.SendAsync(requestMessage);
 
+         if (res.IsSuccessStatusCode)
+        {
+            var data = await res.Content.ReadFromJsonAsync<FeedItem>();
+            this.feedItems.Add(data);
 
-    private void Delete(int id) {
-        var removeItem = this.feedItems.Single(item => item.Id == id);
-        this.feedItems.Remove(removeItem)  ;
+            StateHasChanged();
+
+        }
+
     }
 
 
     private async Task DeleteItem(long id)
     {
-        await Http.DeleteAsync($"https://zard-w4tf2.ondigitalocean.app/api/feeditems/{id}");
-        await GetTodoItems();
-    
+        var res = await Http.DeleteAsync($"{Configuration["API"]}/api/feeditems/{id}");
+        if (res.IsSuccessStatusCode)
+        {
+            var removeItem = this.feedItems.Single(item => item.Id == id);
+            this.feedItems.Remove(removeItem);
+            StateHasChanged();
+        }
+
     }
 
     private void HandleValidSubmit()

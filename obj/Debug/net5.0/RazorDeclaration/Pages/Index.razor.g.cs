@@ -111,8 +111,43 @@ using Blazored.TextEditor;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.Extensions.Configuration;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.AuthProviders;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using aspnetblazor.States;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
 using Microsoft.Extensions.Logging;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
+using System.Security.Claims;
 
 #line default
 #line hidden
@@ -126,10 +161,12 @@ using Microsoft.Extensions.Logging;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
+#line 32 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\Pages\Index.razor"
        
     private Feed feed = new Feed();
     private List<FeedItem> feedItems = new List<FeedItem>();
+
+    
 
     private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
@@ -167,6 +204,7 @@ using Microsoft.Extensions.Logging;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILogger<Index> Logger { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IConfiguration Configuration { get; set; }
     }
 }
 #pragma warning restore 1591

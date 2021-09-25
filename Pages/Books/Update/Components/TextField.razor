@@ -7,6 +7,9 @@
 @inject HttpClient Http
 @using System.Net.Http.Json
 
+@inject IConfiguration Configuration
+
+
 <div class="div-content-editable" style="width: 100%"  id="@Id" contenteditable="true" @onblur="e => UpdateFeed()"> @((MarkupString)InitValue)  </div>
 
 
@@ -23,13 +26,26 @@
         InitValue = feedItem.Data;
     }
 
-    private async void UpdateFeed() {
+
+    private async Task UpdateFeed()
+    {
         string text = new(await JS.InvokeAsync<string>("getInnerHtml", this.Id));
-
         feedItem.Data = text;
+        
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("PUT"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/feeditems/{feedItem.Id}"),
+            Content =
+                JsonContent.Create(feedItem)
+        };
 
-        await Http.PutAsJsonAsync($"https://zard-w4tf2.ondigitalocean.app/api/feeditems/{feedItem.Id}", feedItem);
+        var token = "";
 
+        requestMessage.Content.Headers.TryAddWithoutValidation(
+            "token", token);
+
+        var res = await Http.SendAsync(requestMessage);
     }
  
 }

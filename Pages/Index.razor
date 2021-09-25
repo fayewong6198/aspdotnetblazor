@@ -2,8 +2,12 @@
 
 @using Microsoft.Extensions.Logging
 @inject ILogger<Index> Logger
+@using System.Security.Claims
+
+@ApplicationUser.getUserName()
 
 <div class="col-md-6">
+
 <EditForm Model="@feed" OnValidSubmit="@HandleValidSubmit">
     <ZardTextInput Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextInput>
 </EditForm>
@@ -28,6 +32,8 @@
 @code {
     private Feed feed = new Feed();
     private List<FeedItem> feedItems = new List<FeedItem>();
+
+    
 
     private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
