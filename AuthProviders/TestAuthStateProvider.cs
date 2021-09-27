@@ -45,18 +45,15 @@ namespace aspnetblazor.AuthProviders
 
                 client.DefaultRequestHeaders.Add("token", token);
 
-                Console.WriteLine(1);
                 try
                 {
                     var res = await client.GetFromJsonAsync<User>($"{this.configuration["API"]}/api/authorization/getme");
 
-                    
-                    Console.WriteLine(2);
-                    Console.WriteLine("success");
-                    ApplicationUser.setAvatar("https://kenh14cdn.com/thumb_w/660/2020/10/17/1-0952-16029340185651467234759.jpg");
+                    ApplicationUser.setAvatar(res.Avatar);
                     ApplicationUser.setUserName(res.UserName);
-                    ApplicationUser.setRole("Administrator");
+                    ApplicationUser.setRole(res.Role);
                     ApplicationUser.setEmail(res.Email);
+                    ApplicationUser.setLogin();
 
                     claims = new List<Claim>
                     {
@@ -69,14 +66,9 @@ namespace aspnetblazor.AuthProviders
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(3);
-                    Console.WriteLine(e.ToString());
                     this.navigationManager.NavigateTo("/login");
                     return await Task.FromResult(new AuthenticationState(new ClaimsPrincipal()));
-
                 }
-
-
 
             }
 

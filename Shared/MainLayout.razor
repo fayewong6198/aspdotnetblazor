@@ -1,8 +1,17 @@
 ﻿@inherits LayoutComponentBase
+@using Microsoft.Extensions.Logging
+@using System.Net.Http.Headers
+@inject ILogger<Index> Logger
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
-@inject NavigationManager NavManager
-@using System.Security.Claims
-@inject ApplicationUser ApplicationUser
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+@inject NavigationManager NavigationManager
+@inject States.ApplicationUser ApplicationUser
+
+@inject IConfiguration Configuration
+
 @attribute [Authorize]
 <div class="page">
     <div class="sidebar">
@@ -12,6 +21,9 @@
     <div class="main">
         <div class="top-row px-4">
             <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+            @if (ApplicationUser.IsLogin()) {
+                <a href="#" @onclick="e => Logout()" class="ml-md-auto">Logout</a>
+            }
         </div>
 
         <div class="content px-4">
@@ -22,8 +34,49 @@
 </div>
 
 @code {
+    private LoginParams loginParams = new LoginParams();
+
     protected override async Task OnInitializedAsync()
     {
         
     }
+
+    private async Task Logout() {
+
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("POST"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/authorization/logout"),
+            Content = JsonContent.Create(loginParams)
+        };
+
+        var token = await localStorage.GetItemAsync<string>("token");
+
+        requestMessage.Content.Headers.TryAddWithoutValidation("token", token);
+
+        var res = await Http.SendAsync(requestMessage);
+
+        if (res.IsSuccessStatusCode) {
+            @* Do stuff later *@
+        }
+
+        await localStorage.RemoveItemAsync("token");
+
+        ApplicationUser.setLogout();
+   
+        NavigationManager.NavigateTo("/login");
+
+
+    }
+
+    private class LoginParams
+    {
+        [Required]
+        public string Username { get; set; }
+        [Required]
+        public string Password { get; set; }
+    }
+
+
+    
 }

@@ -1,5 +1,93 @@
 @layout UnAuthorizedLayout
+@using Microsoft.Extensions.Logging
+@using System.Net.Http.Headers
+@inject ILogger<Index> Logger
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+@inject NavigationManager NavigationManager
+@inject States.ApplicationUser ApplicationUser
+
+@inject IConfiguration Configuration
 
 @page "/login"
 
 <div>You need login</div>
+
+<div class="container">
+<EditForm Model="@loginParams">
+    <ZardTextInput Label="Username" @bind-Value="loginParams.Username" ValidationFor="@(() => loginParams.Username)"></ZardTextInput>
+    <ZardPasswordInput Label="Password" @bind-Value="loginParams.Password" ValidationFor="@(() => loginParams.Password)"></ZardPasswordInput>
+    <button class="btn btn-primary" @onclick="e => LoginAction()">Login</button>
+</EditForm>
+</div>
+
+
+
+
+
+@code {
+
+    private LoginParams loginParams = new LoginParams();
+    protected override void OnInitialized()
+    {
+    }
+    private async Task LoginAction()
+    {
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("POST"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/authorization/login"),
+            Content = JsonContent.Create(loginParams),
+        };
+
+        var token = "";
+
+        requestMessage.Content.Headers.TryAddWithoutValidation("token", token);
+
+        var res = await Http.SendAsync(requestMessage);
+
+        if (res.IsSuccessStatusCode)
+        {
+            var data = await res.Content.ReadFromJsonAsync<TokenParams>();
+
+            Console.WriteLine(data.Token);
+
+            await localStorage.SetItemAsync("token", data.Token);
+
+            ApplicationUser.setEmail(data.Email);
+            ApplicationUser.setAvatar(data.Avatar);
+            ApplicationUser.setRole(data.Role);
+            ApplicationUser.setUserName(data.Username);
+            ApplicationUser.setLogin();
+
+            NavigationManager.NavigateTo("/");
+
+            StateHasChanged();
+
+        }
+        // Process the valid form
+    }
+
+    private class LoginParams
+    {
+        [Required]
+        public string Username { get; set; }
+        [Required]
+        public string Password { get; set; }
+    }
+
+
+
+    private class TokenParams
+    {
+        public string Token { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public string Avatar { get; set; }
+        public string Role { get; set; }
+    }
+
+}

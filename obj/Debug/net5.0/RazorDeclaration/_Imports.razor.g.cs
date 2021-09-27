@@ -138,6 +138,13 @@ using aspnetblazor.States;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 20 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
     public partial class _Imports : System.Object
     {
         #pragma warning disable 1998

@@ -659,3 +659,5 @@ C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\b
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\build-gz\gBg0gcHy.gz
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\build-gz\FLJMP7rp.gz
 C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\build-gz\s90+zSz9.gz
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\RazorDeclaration\CustomLibrary\Inputs\ZardPasswordInput.razor.g.cs
+C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\obj\Debug\net5.0\Razor\CustomLibrary\Inputs\ZardPasswordInput.razor.g.cs

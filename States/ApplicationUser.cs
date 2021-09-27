@@ -6,6 +6,7 @@ namespace aspnetblazor.States
         private static string Email {get;set;}
         private static string Role {get;set;}
         private static string Avatar {get;set;}
+        private static bool IsAuthenticated{get;set;}
 
         public static void setUserName(string username) {
             ApplicationUser.UserName = username;
@@ -18,6 +19,12 @@ namespace aspnetblazor.States
         }
         public static void setRole(string role) {
             ApplicationUser.Role = role;
+        }
+        public static void setLogin() {
+            ApplicationUser.IsAuthenticated = true;
+        }
+        public static void setLogout() {
+            ApplicationUser.IsAuthenticated = false;
         }
 
 
@@ -35,6 +42,10 @@ namespace aspnetblazor.States
 
         public static string getAvatar() {
             return ApplicationUser.Avatar;
+        }
+
+        public static bool IsLogin() {
+            return ApplicationUser.IsAuthenticated;
         }
          
     }

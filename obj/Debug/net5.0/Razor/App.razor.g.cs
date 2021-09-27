@@ -136,6 +136,13 @@ using aspnetblazor.States;
 #line hidden
 #nullable disable
 #nullable restore
+#line 20 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\_Imports.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Faye Wong\Documents\Side project\Github\aspnetblazor\App.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
