@@ -16,20 +16,23 @@
     <ZardTextInput Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextInput>
 </EditForm>
 
+@if (IsLoading == true) {
+    <ZardSpinner></ZardSpinner>
+}
 
+else {
     @foreach (var item in feedItems)
     {   
             <div style="display: flex; justify-content: space-between">
-                <div> @item.Id </div>
-            @if (item.Type.Equals("header"))
-            {
-                        <Header feedItem="@item"></Header>
-            }
-            @if (item.Type.Equals("text"))
-            {
-                        <TextField feedItem="@item"></TextField>
+                @if (item.Type.Equals("header"))
+                {
+                    <Header feedItem="@item"></Header>
+                }
+                @if (item.Type.Equals("text"))
+                {
+                    <TextField feedItem="@item"></TextField>
 
-            }
+                }
                 <button class="btn btn-danger" @onclick="e => DeleteItem(item.Id)">Delete</button>
             </div>
 
@@ -39,6 +42,8 @@
         <button class="btn btn-primary mr-2" @onclick=@(e => AddItem("header"))> Add Header</button>
         <button class="btn btn-primary"  @onclick=@(e => AddItem("text"))>Add Text</button>
     </div>
+}
+
 
 
 </div>
@@ -47,6 +52,7 @@
 @code {
     private Feed feed = new Feed();
     private List<FeedItem> feedItems = new List<FeedItem>();
+    private bool IsLoading = false;
 
     private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();
@@ -58,7 +64,9 @@
     }
     private async Task GetTodoItems()
     {
+        this.IsLoading = true;
         feedItems = await Http.GetFromJsonAsync<List<FeedItem>>($"{Configuration["API"]}/api/feeditems");
+        this.IsLoading = false;
         StateHasChanged();
 
     }
@@ -84,7 +92,7 @@
 
         var res = await Http.SendAsync(requestMessage);
 
-         if (res.IsSuccessStatusCode)
+        if (res.IsSuccessStatusCode)
         {
             var data = await res.Content.ReadFromJsonAsync<FeedItem>();
             this.feedItems.Add(data);

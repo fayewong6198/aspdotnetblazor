@@ -7,7 +7,7 @@
 
 @if (forecasts == null)
 {
-    <p><em>Loading...</em></p>
+    <ZardSpinner></ZardSpinner>
 }
 else
 {
@@ -36,10 +36,12 @@ else
 
 @code {
     private WeatherForecast[] forecasts;
-
+    private bool IsLoading = false;
     protected override async Task OnInitializedAsync()
     {
+        this.IsLoading = true;
         forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        this.IsLoading = false;
     }
 
     public class WeatherForecast

@@ -8,6 +8,9 @@
 
 <div class="col-md-6">
 
+<ZardBlockUI IsLoading="true">
+
+
 <EditForm Model="@feed" OnValidSubmit="@HandleValidSubmit">
     <ZardTextInput Label="Title" @bind-Value="feed.Title" ValidationFor="@(() => feed.Title)"></ZardTextInput>
 </EditForm>
@@ -26,6 +29,9 @@
     }
 
     <button class="btn btn-primary" @onclick="e => AddItem()">Add Item</button>
+
+</ZardBlockUI>
+
 </div>
 
 
@@ -33,7 +39,7 @@
     private Feed feed = new Feed();
     private List<FeedItem> feedItems = new List<FeedItem>();
 
-    
+    private bool IsLoading = true;
 
     private int Id = 0;
     private List<CustomLibrary.Inputs.Models.Choice> TitleChoices = new List<CustomLibrary.Inputs.Models.Choice>();

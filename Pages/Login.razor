@@ -17,25 +17,25 @@
 <div>You need login</div>
 
 <div class="container">
-<EditForm Model="@loginParams">
+<EditForm Model="@loginParams" OnInvalidSubmit="e => LoginAction()">
     <ZardTextInput Label="Username" @bind-Value="loginParams.Username" ValidationFor="@(() => loginParams.Username)"></ZardTextInput>
     <ZardPasswordInput Label="Password" @bind-Value="loginParams.Password" ValidationFor="@(() => loginParams.Password)"></ZardPasswordInput>
-    <button class="btn btn-primary" @onclick="e => LoginAction()">Login</button>
+    
+    <ZardButton IsLoading="@IsLoading"  Title="Submit" OnClick="@LoginAction"></ZardButton>
 </EditForm>
 </div>
 
-
-
-
-
 @code {
 
+    private bool IsLoading = false;
     private LoginParams loginParams = new LoginParams();
     protected override void OnInitialized()
     {
     }
-    private async Task LoginAction()
+    private async void LoginAction()
     {
+        this.IsLoading = true;
+
         var requestMessage = new HttpRequestMessage()
         {
             Method = new HttpMethod("POST"),
@@ -53,8 +53,6 @@
         {
             var data = await res.Content.ReadFromJsonAsync<TokenParams>();
 
-            Console.WriteLine(data.Token);
-
             await localStorage.SetItemAsync("token", data.Token);
 
             ApplicationUser.setEmail(data.Email);
@@ -63,9 +61,15 @@
             ApplicationUser.setUserName(data.Username);
             ApplicationUser.setLogin();
 
+            this.IsLoading = false;
+
             NavigationManager.NavigateTo("/");
 
             StateHasChanged();
+
+        }
+        else {
+            this.IsLoading = false;
 
         }
         // Process the valid form

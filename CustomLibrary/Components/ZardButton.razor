@@ -1,0 +1,27 @@
+@inherits LayoutComponentBase
+
+@if(IsLoading == true) {
+    <button class="btn @Css btn-primary " disabled>  
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        @Title
+    </button>
+}
+
+else {
+    <button class="btn @Css btn-primary" @onclick="e => InvokeParentMethod()">@Title</button>
+}
+
+@code {
+    [Parameter] public bool IsLoading { get; set; }
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Css { get; set; }
+
+    [Parameter] public Action OnClick { get; set; }
+
+    private void InvokeParentMethod()
+    {
+        OnClick?.Invoke();
+    }
+
+}
+
