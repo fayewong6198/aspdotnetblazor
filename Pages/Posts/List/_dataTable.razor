@@ -1,0 +1,48 @@
+
+@inject HttpClient Http
+@inject IConfiguration Configuration
+
+
+<h1>Weather post</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (posts == null)
+{
+    <ZardSpinner></ZardSpinner>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var post in posts)
+            {
+                <tr>
+                    <td>@post.Id</td>
+                    <td>@post.Title</td>
+                    <td> <a href="/posts/@post.Id" > Edit </a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Post[] posts;
+    private bool IsLoading = false;
+    protected override async Task OnInitializedAsync()
+    {
+        this.IsLoading = true;
+        posts = await Http.GetFromJsonAsync<Post[]>($"{Configuration["API"]}/api/posts/");
+        this.IsLoading = false;
+    }
+
+  
+}

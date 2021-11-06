@@ -1,0 +1,9 @@
+@page "/posts/{Id}"
+
+<h1>Post Update</h1>
+
+<_formUpdate Id=@Id></_formUpdate>
+
+@code {
+    [Parameter] public string Id {get;set;}
+}

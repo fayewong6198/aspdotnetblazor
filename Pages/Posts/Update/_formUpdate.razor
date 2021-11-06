@@ -1,0 +1,81 @@
+
+@using System.Net.Http
+@inject HttpClient Http
+@using System.Net.Http.Json
+@inject NavigationManager NavigationManager
+@inject States.ApplicationUser ApplicationUser
+
+@inject IConfiguration Configuration
+
+<EditForm Model="@post" OnValidSubmit="@HandleValidSubmit">
+    <ZardTextInput Label="Title" @bind-Value="post.Title" ValidationFor="@(() => post.Title)"></ZardTextInput>
+    @post.Id
+    <ZardButton IsLoading="@IsLoading"  Title="Submit" OnClick="@HandleValidSubmit"></ZardButton>
+</EditForm>
+
+
+@code {
+    public Post post = new Post();
+
+    [Parameter] public string Id {get;set;}
+
+    public bool IsLoading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        post = await Http.GetFromJsonAsync<Post>($"{Configuration["API"]}/api/posts/{Id}");
+
+    } 
+
+    private async void HandleValidSubmit()
+    {
+         this.IsLoading = true;
+
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("PUT"),
+            RequestUri = new Uri($"{Configuration["API"]}/api/posts/{post.Id}"),
+            Content = JsonContent.Create(post),
+        };
+
+        var token = "";
+
+        requestMessage.Content.Headers.TryAddWithoutValidation("token", token);
+
+        try {
+        var res = await Http.SendAsync(requestMessage);
+
+        if (res.IsSuccessStatusCode)
+        {
+        
+            this.IsLoading = false;
+
+            StateHasChanged();
+
+        }
+        else {
+            this.IsLoading = false;
+            Console.WriteLine("ccc");
+            StateHasChanged();
+
+
+        }
+       
+        } catch (Exception e) {
+            Console.WriteLine(e.ToString());
+            this.IsLoading = false;
+            StateHasChanged();
+
+
+        }
+        // Process the valid form
+
+        // Process the valid form
+    }
+
+    public void resetForm() {
+        post.Title = "";
+        StateHasChanged();
+    }
+
+}
